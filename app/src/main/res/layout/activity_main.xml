@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="250dp"
+        android:text="Pedido Pizzeria "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/textnum1"
+        android:layout_width="317dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="5dp"
+        android:text="Introduce los ingredientes que quiera en la pizza :"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pedido"
+        tools:ignore="MissingConstraints" />
+
+
+    <CheckBox
+        android:id="@+id/champiñones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Champiñones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnum1"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/extra"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:text="Extra de mozarella"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champiñones"></CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pepino "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extra"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/piña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Piña "
+        android:layout_marginStart="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnum1"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/aceitunas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceitunas "
+        android:layout_marginStart="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/piña"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/atun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atún "
+        android:layout_marginStart="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aceitunas"></CheckBox>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
